@@ -20,10 +20,10 @@ mzHash128 is well-suited for a variety of non-cryptographic use cases, including
 ## Place in the mzHash Family:
 The mzHash family consists of three members:
 
-**mzHash32** : A 32-bit hash function optimized for lightweight applications.
-**mzHash64** : A 64-bit hash function offering a balance between speed and collision resistance.
-**mzHash128** : The newest member, providing a robust 128-bit output for demanding applications.
-Each function in the mzHash family adheres to the same design philosophy: simplicity, speed, and effectiveness. This consistency makes it easy for developers to choose the appropriate variant based on their specific requirements without compromising on quality.
+**mzHash32** : A 32-bit hash function optimized for lightweight applications.<br>
+**mzHash64** : A 64-bit hash function offering a balance between speed and collision resistance.<br>
+**mzHash128** : The newest member, providing a robust 128-bit output for demanding applications.<br>
+Each function in the mzHash family adheres to the same design philosophy: simplicity, speed, and effectiveness. This consistency makes it easy for developers to choose the appropriate variant based on their specific requirements without compromising on quality.<br>
 
 ## Why Choose mzHash128?
 For developers seeking a reliable, efficient, and easy-to-implement hash function, mzHash128 offers an attractive solution. Its combination of a large output size, low collision rate, and fast execution time makes it a strong contender in the realm of non-cryptographic hashing.
