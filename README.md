@@ -3,10 +3,10 @@
 We are excited to present mzHash128 , the latest addition to the mzHash family of non-cryptographic hash functions. Building upon the success of its predecessors, mzHash32 and mzHash64, mzHash128 extends the family with a 128-bit output while maintaining the same principles of simplicity, speed, and high performance in minimizing collisions.
 
 ## Key Features of mzHash128:
-**128-Bit Output** : mzHash128 provides a larger hash space compared to mzHash64 and mzHash32, making it suitable for applications requiring higher entropy or reduced collision probabilities. 
-**Simplicity** : Like its counterparts, mzHash128 employs a straightforward algorithm that is easy to implement and understand, ensuring minimal overhead and maximum efficiency. 
-**Speed** : Designed for optimal performance, mzHash128 processes input data quickly, making it ideal for real-time or high-throughput applications where computational resources are limited. 
-**Low Collision Rate** : mzHash128 demonstrates excellent distribution properties, closely approximating the behavior of a theoretical Universal Hash Function. This ensures a near-random distribution of hash values, reducing the likelihood of collisions even for large datasets. 
+ **128-Bit Output** : mzHash128 provides a larger hash space compared to mzHash64 and mzHash32, making it suitable for applications requiring higher entropy or reduced collision probabilities. 
+ **Simplicity** : Like its counterparts, mzHash128 employs a straightforward algorithm that is easy to implement and understand, ensuring minimal overhead and maximum efficiency. 
+ **Speed** : Designed for optimal performance, mzHash128 processes input data quickly, making it ideal for real-time or high-throughput applications where computational resources are limited. 
+ **Low Collision Rate** : mzHash128 demonstrates excellent distribution properties, closely approximating the behavior of a theoretical Universal Hash Function. This ensures a near-random distribution of hash values, reducing the likelihood of collisions even for large datasets. 
 
 ## Applications:
 mzHash128 is well-suited for a variety of non-cryptographic use cases, including:
