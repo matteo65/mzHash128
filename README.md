@@ -34,7 +34,7 @@ In this case, the hash values ​​for all strings between the number **"zero"*
 **Maximum byte frequency** = 627006  
 **Variance σ<sup>2</sup>** = 582152.3359375  
 **Standard Deviation σ** = 762.989079828473  
-**Coefficient of Variation <sup>σ</sup>/<sub>μ</sub>** = 0.12207825277255567  
+**Coefficient of Variation <sup>σ</sup>/<sub>μ</sub>** = 0.12207825277255567%  
 **Chi-Square 𝛘<sup>2</sup>** = 238.44959679999994  
 **Average bytes value** = 127.4960377125 (127.5 random)  
 **Entropy** = 7.999998924887414 bits (8 random)  
