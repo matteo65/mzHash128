@@ -21,6 +21,29 @@ public static void mzHash128(byte[] data, int start, int length, long seed, long
 **Speed** : Designed for optimal performance, mzHash128 processes input data quickly, making it ideal for real-time or high-throughput applications where computational resources are limited.<br>
 **Low Collision Rate** : mzHash128 demonstrates excellent distribution properties, closely approximating the behavior of a theoretical Universal Hash Function. This ensures a near-random distribution of hash values, reducing the likelihood of collisions even for large datasets.<br>
 
+## Hash Value Distribution Analysis
+For hashing functions with length greater than or equal to 64 bits, it is very difficult, if not impossible, to count collisions, therefore, in order to verify the quality of the result, statistical analysis on hashing samples is used. A quality hashing function must produce an output with a uniform distribution and indistinguishable from a random sequence of bytes.
+
+In this case, the hash values ​​for all strings between the number "zero" and the number "nine million nine hundred ninety-nine thousand nine hundred ninety-nine" were concatenated for a total of 10,000,000 hashes. VisualRT was used to analyze the output and the result passed all randomness tests, confirming the quality of the mzHash family algorithm.
+
+![Alt Text](https://raw.githubusercontent.com/matteo65/mzHash128/main/Resource/mzhash128output.png)
+
+Length = 160000000
+Average byte frequency = 625000.0
+Minimum byte frequency = 622747
+Maximum byte frequency = 627006
+Variance = 582152.3359375
+Standard Deviation = 762.989079828473
+Coefficient of Variation = 0.12207825277255567
+Chi-Square Test = 238.44959679999994
+Average bytes value = 127.4960377125 (127.5 random)
+Entropy = 7.999998924887414 bits (8 random)
+Estimated Compressed Length = 160000000
+Monte Carlo for Pi 2D = 3.1413165785329147 (error = 0.00878774199331576%)
+Monte Carlo for Pi 3D = 3.1415918874446453 (error = 0.00002438715747863%)
+Average of Contiguous Byte Pairs = 32766.48172108426 (32767.5 random) (error 0.0031075880544462224%)
+4 Bytes Collisions = 185738 (expected collisions = 185687.61296987534)
+
 ## Applications
 mzHash128 is well-suited for a variety of non-cryptographic use cases, including:
 
