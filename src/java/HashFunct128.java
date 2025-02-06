@@ -1,5 +1,5 @@
 /**
- * mzHash64
+ * mzHash128
  * 
  * Strong, fast, simple, non-cryptographic 128-bit hash function
  * 
