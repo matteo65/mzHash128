@@ -29,18 +29,18 @@ In this case, the hash values ​​for all strings between the number **"zero"*
 ![Alt Text](https://raw.githubusercontent.com/matteo65/mzHash128/main/Resource/mzhash128output.png)
 
 **Length** = 160000000  
-**Average byte frequency** = 625000.0  
+**Average byte frequency μ** = 625000.0  
 **Minimum byte frequency** = 622747  
 **Maximum byte frequency** = 627006  
-**Variance** = 582152.3359375  
-**Standard Deviation** = 762.989079828473  
-**Coefficient of Variation** = 0.12207825277255567  
-**Chi-Square Test** = 238.44959679999994  
+**Variance σ<sup>2</sup>** = 582152.3359375  
+**Standard Deviation σ** = 762.989079828473  
+**Coefficient of Variation <sup>σ</sup>/<sub>μ</sub>** = 0.12207825277255567  
+**Chi-Square 𝛘<sup>2</sup>** = 238.44959679999994  
 **Average bytes value** = 127.4960377125 (127.5 random)  
 **Entropy** = 7.999998924887414 bits (8 random)  
 **Estimated Compressed Length** = 160000000  
-**Monte Carlo for Pi 2D = 3.1413165785329147** (error = 0.00878774199331576%)  
-**Monte Carlo for Pi 3D = 3.1415918874446453** (error = 0.00002438715747863%)  
+**Monte Carlo for Pi 2D** = 3.1413165785329147 (error = 0.00878774199331576%)  
+**Monte Carlo for Pi 3D** = 3.1415918874446453 (error = 0.00002438715747863%)  
 **Average of Contiguous Byte Pairs** = 32766.48172108426 (32767.5 random) (error 0.0031075880544462224%)  
 **4 Bytes Collisions** = 185738 (expected collisions = 185687.61296987534)  
 
