@@ -79,6 +79,10 @@ public class HashFunct128 {
 		mzHash128(data, 0, data.length, 0, out);
 	}
 	
+	public static void mzHash128(byte[] data, long[] out) {
+		mzHash128(data, 0, data.length, 0, out);
+	}
+	
 	public static long[] mzHash128(byte[] data) {
 		long[] out = new long[2];
 		mzHash128(data, 0, data.length, 0, out);
