@@ -22,7 +22,7 @@ public static void mzHash128(byte[] data, int start, int length, long seed, long
 **Low Collision Rate** : mzHash128 demonstrates excellent distribution properties, closely approximating the behavior of a theoretical Universal Hash Function. This ensures a near-random distribution of hash values, reducing the likelihood of collisions even for large datasets.  
 
 ## Hash Value Distribution Analysis
-For hashing functions with length greater than or equal to 64 bits, it is very difficult, if not impossible, to count collisions, therefore, in order to verify the quality of the result, statistical analysis on hashing samples is used. A quality hashing function must produce an output with a uniform distribution and indistinguishable from a random sequence of bytes.
+For hashing functions with length greater than or equal to 128 bits, it is very difficult, if not impossible, to count collisions, therefore, in order to verify the quality of the result, statistical analysis on hashing samples is used. A quality hashing function must produce an output with a uniform distribution and indistinguishable from a random sequence of bytes.
 
 In this case, the hash values ​​for all strings between the number **"zero"** and the number **"nine million nine hundred ninety-nine thousand nine hundred ninety-nine"** were concatenated for a total of 10,000,000 hashes. VisualRT was used to analyze the output and the result passed all randomness tests, confirming the quality of the mzHash family algorithm.
 
