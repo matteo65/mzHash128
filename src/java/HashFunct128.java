@@ -50,8 +50,9 @@ public class HashFunct128 {
 		long hash2 = 0x7F573AFD9B2368FDL ^ seed;
 		
 		for(int i = 0; i < length; i++) {
-			hash1 = 0x7EECB951FC241210L * (i + data[start + i]) ^ (hash2 << 2) ^ (hash2 >>> 2);
-			hash2 = 0x447239684A147E94L * (i + data[start + i]) ^ (hash1 << 2) ^ (hash1 >>> 2);
+			long x = i + data[start + i];
+			hash1 = 0x7EECB951FC241210L * x ^ (hash2 << 2) ^ (hash2 >>> 2);
+			hash2 = 0x447239684A147E94L * x ^ (hash1 << 2) ^ (hash1 >>> 2);
 		}
 		out.val1 = hash1;
 		out.val2 = hash2;
@@ -62,8 +63,9 @@ public class HashFunct128 {
 		long hash2 = 0x7F573AFD9B2368FDL ^ seed;
 		
 		for(int i = 0; i < length; i++) {
-			hash1 = 0x7EECB951FC241210L * (i + data[start + i]) ^ (hash2 << 2) ^ (hash2 >>> 2);
-			hash2 = 0x447239684A147E94L * (i + data[start + i]) ^ (hash1 << 2) ^ (hash1 >>> 2);
+			long x = i + data[start + i];
+			hash1 = 0x7EECB951FC241210L * x ^ (hash2 << 2) ^ (hash2 >>> 2);
+			hash2 = 0x447239684A147E94L * x ^ (hash1 << 2) ^ (hash1 >>> 2);
 		}
 		out[0] = hash1;
 		out[1] = hash2;
