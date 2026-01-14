@@ -31,18 +31,18 @@ In this case, the hash values ​​for all strings between the number **"zero"*
 
 **Length** = 160000000  
 **Average byte frequency μ** = 625000.0  
-**Minimum byte frequency** = 622747  
-**Maximum byte frequency** = 627006  
-**Variance σ<sup>2</sup>** = 582152.3359375  
-**Standard Deviation σ** = 762.989079828473  
-**Coefficient of Variation <sup>σ</sup>/<sub>μ</sub>** = 0.12207825277255567%  
-**Chi-Square 𝛘<sup>2</sup>** = 238.44959679999994  
-**Average bytes value** = 127.4960377125 (127.5 random)  
-**Entropy** = 7.999998924887414 bits (8 random)  
-**Monte Carlo for π 2D** = 3.1413165785329147 (error = 0.00878774199331576%)  
-**Monte Carlo for π 3D** = 3.1415918874446453 (error = 0.00002438715747863%)  
-**Average of Contiguous Byte Pairs** = 32766.48172108426 (32767.5 random) (error 0.0031075880544462224%)  
-**4 Bytes Collisions** = 185738 (expected collisions = 185687.61296987534)  
+**Minimum byte frequency** = 622348  
+**Maximum byte frequency** = 627130  
+**Variance σ<sup>2</sup>** = 659097.242 
+**Standard Deviation σ** = 811.848  
+**Coefficient of Variation <sup>σ</sup>/<sub>μ</sub>** = 0.1299%  
+**Chi-Square 𝛘<sup>2</sup>** = 269.966  
+**Average bytes value** = 127.498 (127.5 random)  
+**Entropy** = 7.999999 bits (8 random)  
+**Monte Carlo for π 2D** = 3.141788 (error = 0.006%)  
+**Monte Carlo for π 3D** = 3.142216 (error = 0.0199%)  
+**Average of Contiguous Byte Pairs** = 32766.802 (32767.5 random) (error 0.002%)  
+**4 Bytes Collisions** = 185442 (expected collisions = 185687.6)  
 
 ## Applications
 mzHash128 is well-suited for a variety of non-cryptographic use cases, including:
