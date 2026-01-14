@@ -2,18 +2,21 @@
 # mzHash128: A Fast and Efficient Non-Cryptographic Hash Function
 We are excited to present mzHash128 , the latest addition to the mzHash family of non-cryptographic hash functions. Building upon the success of its predecessors, mzHash32 and mzHash64, mzHash128 extends the family with a 128-bit output while maintaining the same principles of simplicity, speed, and high performance in minimizing collisions.
 
-```java
-public static void mzHash128(byte[] data, int start, int length, long seed, long[] output) {
-	long hash1 = 0;
-	long hash2 = 0x7F573AFD9B2368FDL ^ seed;
-	
-	for(int i = 0; i < length; i++) {
-		long x = i + data[start + i];
-		hash1 = 0x7EECB951FC241210L * x ^ (hash2 << 2) ^ (hash2 >>> 2);
-		hash2 = 0x447239684A147E94L * x ^ (hash1 << 2) ^ (hash1 >>> 2);
+```C
+void mzhash128(const char* data, size_t length, uint64_t seed, uint64_t* output)
+{
+	const int8_t *bytes = (const int8_t*)data;
+	uint64_t hash0 = 0xB04C2438F4F7D8D1uLL ^ seed;
+	uint64_t hash1 = 0xA3B8FD0DF0836C0DuLL ^ seed;
+		
+	while(length--) {
+		uint64_t h = 0xD76F648260B0F9FDuLL * (*bytes ^ hash0 * 256 ^ hash0 / 256);
+		hash0 = 0xD1DA2131A0C25299uLL * (*bytes++ ^ hash1 * 256 ^ hash1 / 256);
+		hash1 = h;
 	}
-	output[0] = hash1;
-	output[1] = hash2;
+	
+	output[0] = hash0;
+	output[1] = hash1;
 }
 ```
 ## Key Features of mzHash128
