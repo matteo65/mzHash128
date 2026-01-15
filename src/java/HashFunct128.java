@@ -24,9 +24,9 @@ public class HashFunct128 {
 	
 	private HashFunct128() {}
 	
-	public static void mzHash128(byte[] data, int start, int length, long seed, LongPair out) {
-		long hash0 = 0xB04C2438F4F7D8D1L ^ seed;
-		long hash1 = 0xA3B8FD0DF0836C0DL ^ seed;
+	public static void mzHash128(byte[] data, int start, int length, LongPair out) {
+		long hash0 = 0xB04C2438F4F7D8D1L;
+		long hash1 = 0xA3B8FD0DF0836C0DL;
 		
 		for(int i = 0; i < length; i++) {
 			byte b = data[start + i];
@@ -38,9 +38,9 @@ public class HashFunct128 {
 		out.val1 = hash1;
 	}
 	
-	public static void mzHash128(byte[] data, int start, int length, long seed, long[] out) {
-        long hash0 = 0xB04C2438F4F7D8D1L ^ seed;
-        long hash1 = 0xA3B8FD0DF0836C0DL ^ seed;
+	public static void mzHash128(byte[] data, int start, int length, long[] out) {
+        long hash0 = 0xB04C2438F4F7D8D1L;
+        long hash1 = 0xA3B8FD0DF0836C0DL;
         
         for(int i = 0; i < length; i++) {
             byte b = data[start + i];
@@ -52,24 +52,25 @@ public class HashFunct128 {
 		out[1] = hash1;
 	}
 	
-	public static long[] mzHash128(byte[] data, int start, int length, long seed) {
+	public static long[] mzHash128(byte[] data, int start, int length) {
 		long[] out = new long[2];
-		mzHash128(data, start, length, seed, out);
+		mzHash128(data, start, length, out);
 		return out;
 	}
 	
 	public static void mzHash128(byte[] data, LongPair out) {
-		mzHash128(data, 0, data.length, 0, out);
+		mzHash128(data, 0, data.length, out);
 	}
 	
 	public static void mzHash128(byte[] data, long[] out) {
-		mzHash128(data, 0, data.length, 0, out);
+		mzHash128(data, 0, data.length, out);
 	}
 	
 	public static long[] mzHash128(byte[] data) {
 		long[] out = new long[2];
-		mzHash128(data, 0, data.length, 0, out);
+		mzHash128(data, 0, data.length, out);
 		return out;
 	}
 
 }
+
