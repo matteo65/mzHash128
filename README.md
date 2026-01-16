@@ -3,7 +3,7 @@
 We are excited to present mzHash128 , the latest addition to the mzHash family of non-cryptographic hash functions. Building upon the success of its predecessors, mzHash32 and mzHash64, mzHash128 extends the family with a 128-bit output while maintaining the same principles of simplicity, speed, and high performance in minimizing collisions.
 
 ```C
-void mzhash128(const char* data, size_t length, uint64_t* output)
+void mzhash128(const void* data, size_t length, uint64_t* output)
 {
 	const int8_t *bytes = (const int8_t*)data;
 	uint64_t hash0 = 0xB04C2438F4F7D8D1uLL;
