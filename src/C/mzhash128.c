@@ -5,7 +5,7 @@
  * 
  * Author: Matteo Zapparoli
  * Date: 2026-01
- * Reelease: 2
+ * Release: 2
  *
  * SPDX-FileCopyrightText: 2026 Matteo Zapparoli <zapparoli.matteo@gmail.com>
  * SPDX-License-Identifier: Apache-2.0
@@ -45,4 +45,5 @@ void mzhash128_str(const char* str, uint64_t* output)
 	output[0] = hash0;
 	output[1] = hash1;
 }
+
 
